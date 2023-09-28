@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import initCesiumMap from "../hooks/initCesiumMap";
+import initCesiumMap from "@/hooks/initCesiumMap";
 import { onMounted } from "vue";
 const { init } = initCesiumMap();
 

@@ -1,4 +1,4 @@
-import CesiumMap from "../cesium";
+import CesiumMap from "@/cesium";
 
 let viewer: CesiumMap | null = null;
 

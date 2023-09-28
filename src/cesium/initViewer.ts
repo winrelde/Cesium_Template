@@ -84,10 +84,10 @@ const initViewer = (container: string | HTMLElement) => {
     selectionIndicator: false,
     homeButton: false, // 主页按钮，默认true
     scene3DOnly: false, // 每个几何实例仅以3D渲染以节省GPU内存
-    animation: true, // 动画控制，默认true
+    animation: false, // 动画控制，默认true
     baseLayerPicker: false, // 是否显示图层选择控件
     geocoder: false, // 地名查找,默认true
-    timeline: true, // 时间线,默认true
+    timeline: false, // 时间线,默认true
     navigationHelpButton: false, // 导航帮助说明,默认true
     sceneModePicker: false, // 是否显示投影方式控件
     infoBox: false, // 点击要素之后显示的信息,默认true
