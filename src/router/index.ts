@@ -4,14 +4,11 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     redirect: "/login",
-    children: [],
-    meta: {},
   },
   {
     path: "/login",
     name: "login",
     component: () => import("@/components/Login/index.vue"),
-    children: [],
   },
   {
     path: "/home",
