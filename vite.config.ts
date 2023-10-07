@@ -22,7 +22,7 @@ export default defineConfig({
     vue(),
     cesium(),
     AutoImport({
-      imports: ["vue", "vue-router", "vuex"],
+      imports: ["vue", "vue-router", "pinia"],
       resolvers: [ElementPlusResolver()],
       dts: "src/types/auto-imports.d.ts", // 指定自动导入函数TS类型声明文件路径,
       dirs: ["src/components"],

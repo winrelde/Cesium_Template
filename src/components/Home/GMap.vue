@@ -45,7 +45,6 @@
 <script setup lang="ts">
 import initCesiumMap from "@/hooks/initCesiumMap";
 import { onMounted } from "vue";
-import { Plus, Aim, Minus } from "@element-plus/icons-vue";
 const { init, getCesiumMap } = initCesiumMap();
 
 const DFlag = ref(true);

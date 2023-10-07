@@ -13,10 +13,10 @@
     "cesium": "^1.109.0",
     "element-plus": "^2.3.14",
     "less": "^4.2.0",
+    "pinia": "^2.1.6",
     "vite-plugin-cesium": "^1.2.22",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.5",
-    "vuex": "^4.1.0"
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

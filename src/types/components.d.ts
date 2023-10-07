@@ -7,15 +7,24 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    2: typeof import('./../components/Navigation/Project1 copy 2.vue')['default']
+    copy: typeof import('./../components/Navigation/Project1 copy.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElForm: typeof import('element-plus/es')['ElForm']
     ElFormItem: typeof import('element-plus/es')['ElFormItem']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElInput: typeof import('element-plus/es')['ElInput']
+    ElTooltip: typeof import('element-plus/es')['ElTooltip']
     GMap: typeof import('./../components/Home/GMap.vue')['default']
+    Home: typeof import('./../components/Home/index.vue')['default']
     Login: typeof import('./../components/Login/index.vue')['default']
     MapPicker: typeof import('./../components/Home/MapPicker.vue')['default']
+    Project1: typeof import('./../components/Navigation/Project1.vue')['default']
+    Project2: typeof import('./../components/Navigation/Project2.vue')['default']
+    Project3: typeof import('./../components/Navigation/Project3.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Sidebar: typeof import('./../components/Home/sidebar.vue')['default']
+    SideBar: typeof import('./../components/Home/SideBar.vue')['default']
   }
 }
