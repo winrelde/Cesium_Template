@@ -28,7 +28,7 @@
             <Minus />
           </el-icon>
         </div>
-        <!-- <MapPicker></MapPicker> -->
+        <MapPicker></MapPicker>
       </div>
     </div>
     <div class="footer">
@@ -124,7 +124,7 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .g-map-wrap {
   width: 100%;
   height: 100%;
@@ -177,7 +177,7 @@ onMounted(() => {
       }
 
       .g-map-panel-item:hover {
-        border: 1px solid blue;
+        border: 1px solid rgb(28, 125, 221);
         border-radius: 2px;
       }
 

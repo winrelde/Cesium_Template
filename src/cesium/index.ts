@@ -16,13 +16,42 @@ import {
   BoundingSphere,
   EllipsoidGeodesic,
 } from "cesium";
-import InitViewer from "./initViewer";
+import InitViewer, {
+  setMapWorldImageLayer,
+  setBasicMapWorldImageLayer,
+} from "./initViewer";
 
 class CesiumMap {
   viewer: Viewer;
 
+  private removeImageLayerFunc: any;
+
+  private removeShpLayerFunc: any;
+
   constructor(container: string | HTMLElement) {
     this.viewer = InitViewer(container);
+  }
+
+  addTianDiTuImage() {
+    this.removeImageLayerFunc = setMapWorldImageLayer(this.viewer);
+  }
+
+  removeTianDiTuImage() {
+    if (this.removeImageLayerFunc) {
+      this.removeImageLayerFunc();
+      this.removeImageLayerFunc = null;
+    }
+  }
+
+  addTianDiTuShp() {
+    this.removeShpLayerFunc = setBasicMapWorldImageLayer(this.viewer);
+  }
+
+  removeTianDiTuShp() {
+    if (this.removeShpLayerFunc) {
+      this.removeShpLayerFunc();
+      this.removeShpLayerFunc = null;
+    }
   }
 
   destroy() {

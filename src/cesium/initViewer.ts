@@ -48,7 +48,7 @@ const createMapWorldImageLayer = (
   return layer;
 };
 
-const setMapWorldImageLayer = (viewer: Viewer) => {
+export const setMapWorldImageLayer = (viewer: Viewer) => {
   const layerBase = createMapWorldImageLayer(viewer, "img_w");
   const ciaW = createMapWorldImageLayer(viewer, "cia_w");
   const baseLayer = viewer.imageryLayers.addImageryProvider(layerBase);
@@ -59,6 +59,18 @@ const setMapWorldImageLayer = (viewer: Viewer) => {
     viewer.imageryLayers.remove(ciaWLayer, true);
   };
 };
+
+export function setBasicMapWorldImageLayer(viewer: Viewer) {
+  const vecW = createMapWorldImageLayer(viewer, "vec_w");
+  const cvaW = createMapWorldImageLayer(viewer, "cva_w");
+  const vecWLayer = viewer.imageryLayers.addImageryProvider(vecW);
+  const cvaWLayer = viewer.imageryLayers.addImageryProvider(cvaW);
+
+  return () => {
+    viewer.imageryLayers.remove(vecWLayer, true);
+    viewer.imageryLayers.remove(cvaWLayer, true);
+  };
+}
 
 const setView = (
   viewer: Viewer,

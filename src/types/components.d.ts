@@ -14,6 +14,7 @@ declare module 'vue' {
     ElInput: typeof import('element-plus/es')['ElInput']
     GMap: typeof import('./../components/Home/GMap.vue')['default']
     Login: typeof import('./../components/Login/index.vue')['default']
+    MapPicker: typeof import('./../components/Home/MapPicker.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
